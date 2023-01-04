@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coisas escondidas</title>
+    <style>
+        div.mostrar{
+            color: blueviolet;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <p>Abaixo tem o nosso cardápio</p>
+    <div class="mostrar">
+        Bebidas
+        <p>
+            Coca-cola
+            <br>
+            Pepsi
+            <br>
+            H20
+        </p>
+    </div>
+    <div class="mostrar">
+        Sobremesas
+        <p>
+            Brownie
+            <br>
+            Sorvete
+            <br>
+            Brownie com sorvete
+        </p>
+    </div>
+    
+</body>
+</html>
