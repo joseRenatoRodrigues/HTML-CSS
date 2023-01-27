@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+
+        table{
+            width: 400px;
+        }
+
+        td, th{
+        border: 1px solid black;
+        padding: 10px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead > tr > th, tfoot > tr > th, tfoot > tr > td{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando tabelas grandes</h1>
+    <table>
+        <caption>Populações Mundiais/ World Population</caption>
+        <thead>
+            <tr>
+            <th scope="col">País/Country</th>
+            <th scope="col" id="pop">População/Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rússia</td>
+                <td class="num">1.394.550.000</td>
+            </tr>
+            <tr>
+                <td>índia</td>
+                <td class="num">1.343.500.000</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="num">328.700.000</td>
+            </tr>
+            <tr>
+                <td>Indonésia</td>
+                <td class="num">268.074.600</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">209.520.000</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="num">203.687.000</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="num">193.392.517</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="num">166.054.000</td>
+            </tr>
+            <tr>
+                <td>Rússia</td>
+                <td class="num">146.793.744</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="num">126.577.691</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">População Total/ Total Population</th>
+                <td class="num">4.380.849.552</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
