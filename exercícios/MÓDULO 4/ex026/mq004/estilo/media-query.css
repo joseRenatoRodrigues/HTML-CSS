@@ -1,3 +1,61 @@
 @charset "UTF-8";
 
 /*aqui tem todas as outras mq's*/
+
+@media print{ /*impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main > h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#impre{display: block;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){/*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#impre{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}
+    img#pc{display: block;}
+    img#impre{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {/*grandes telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#impre{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: block;}
+}
